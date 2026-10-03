@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SRM Mechanic | Appliance Repair Services</title>
+
+    <meta name="description"
+          content="SRM Mechanic provides doorstep AC, refrigerator, washing machine, RO and geyser repair services.">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div id="loader" aria-label="Loading SRM Mechanic">
+    <div class="loader-logo"><i class="fa-solid fa-screwdriver-wrench"></i> SRM</div>
+    <div class="loader-line"></div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+            </span>
+
+            <span>
+                <strong>SRM</strong>
+                <small>MECHANIC</small>
+            </span>
+        </a>
+
+        <nav id="nav">
+
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#process">How It Works</a>
+            <a href="#why">Why Us</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <a class="call-button" href="tel:9588398563">
+            <i class="fa-solid fa-phone"></i>
+            9588398563
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle navigation" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-bg" aria-hidden="true"></div>
+
+    <div class="container hero-grid">
+
+        <div class="hero-content">
+
+            <div class="status">
+                <span></span>
+                AVAILABLE FOR SERVICE
+            </div>
+
+            <h1>
+                Your Home.
+                <span>Our Expertise.</span>
+            </h1>
+
+            <p>
+                Professional appliance repair at your doorstep. Fast service for AC, Refrigerator, Washing Machine, RO, Geyser and more.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button type="button" class="btn primary" onclick="openBooking('General Appliance Service')">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Book Service
+                </button>
+
+                <a href="tel:9588398563" class="btn outline">
+                    <i class="fa-solid fa-phone"></i>
+                    Call 9588398563
+                </a>
+
+            </div>
+
+            <div class="trust-row">
+
+                <div>
+                    <strong>5</strong>
+                    <small>Service Categories</small>
+                </div>
+
+                <div>
+                    <strong>24/7</strong>
+                    <small>Booking Support</small>
+                </div>
+
+                <div>
+                    <strong>Fast</strong>
+                    <small>Doorstep Response</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <figure class="hero-photo hero-visual">
+            <img
+                src="https://images.pexels.com/photos/38788452/pexels-photo-38788452.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="Wall-mounted split air conditioner in a home interior"
+            >
+            <figcaption class="floating-card card-one">
+                <span class="hero-photo-mark"><i class="fa-solid fa-snowflake"></i></span>
+                <span><strong>Appliance Service</strong><small>At your doorstep</small></span>
+            </figcaption>
+        </figure>
+
+    </div>
+
+</section>
+
+<div class="ticker" aria-label="Appliance services">
+    <div class="ticker-track">
+        <span>AC REPAIR</span><b>•</b><span>REFRIGERATOR</span><b>•</b>
+        <span>WASHING MACHINE</span><b>•</b><span>RO SERVICE</span><b>•</b>
+        <span>GEYSER</span><b>•</b><span>AC REPAIR</span><b>•</b>
+        <span aria-hidden="true">REFRIGERATOR</span><b aria-hidden="true">•</b>
+        <span aria-hidden="true">WASHING MACHINE</span><b aria-hidden="true">•</b>
+        <span aria-hidden="true">RO SERVICE</span><b aria-hidden="true">•</b>
+        <span aria-hidden="true">GEYSER</span><b aria-hidden="true">•</b>
+    </div>
+</div>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>OUR SERVICES</span>
+
+            <h2>Complete Home Appliance Solutions</h2>
+
+            <p>
+                From installation and maintenance to complete repair,
+                our technicians are ready to help.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <div class="service-card"
+                 onclick="selectService('AC Repair & Service')">
+
+                <img class="service-photo" src="https://images.pexels.com/photos/38788452/pexels-photo-38788452.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Wall-mounted split air conditioner" loading="lazy">
+
+                <div class="service-icon blue">
+                    <i class="fa-solid fa-snowflake"></i>
+                </div>
+
+                <h3>AC Repair & Service</h3>
+
+                <p>
+                    AC cooling problems, gas charging, servicing,
+                    installation and maintenance.
+                </p>
+
+                <div class="service-price"><small>STARTING AT</small><strong>₹249</strong></div>
+
+                <button type="button" class="service-book">Book this service <i class="fa-solid fa-arrow-right"></i></button>
+
+            </div>
+
+
+            <div class="service-card"
+                 onclick="selectService('Refrigerator Repair')">
+
+                <img class="service-photo" src="https://images.pexels.com/photos/9646742/pexels-photo-9646742.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Refrigerator in a bright kitchen" loading="lazy">
+
+                <div class="service-icon green">
+                    <i class="fa-solid fa-temperature-low"></i>
+                </div>
+
+                <h3>Refrigerator Repair</h3>
+
+                <p>
+                    Cooling problems, compressor, gas, thermostat
+                    and refrigerator maintenance.
+                </p>
+
+                <div class="service-price"><small>STARTING AT</small><strong>₹249</strong></div>
+
+                <button type="button" class="service-book">Book this service <i class="fa-solid fa-arrow-right"></i></button>
+
+            </div>
+
+
+            <div class="service-card"
+                 onclick="selectService('Washing Machine Repair')">
+
+                <img class="service-photo" src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=900&q=80" alt="Washing machine in a clean laundry space" loading="lazy">
+
+                <div class="service-icon purple">
+                    <i class="fa-solid fa-soap"></i>
+                </div>
+
+                <h3>Washing Machine</h3>
+
+                <p>
+                    Fully automatic, semi automatic, front load
+                    and top load washing machine repair.
+                </p>
+
+                <div class="service-price"><small>STARTING AT</small><strong>₹249</strong></div>
+
+                <button type="button" class="service-book">Book this service <i class="fa-solid fa-arrow-right"></i></button>
+
+            </div>
+
+
+            <div class="service-card"
+                 onclick="selectService('RO Service')">
+
+                <img class="service-photo photo-ro" src="https://images.pexels.com/photos/31944364/pexels-photo-31944364.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Water filter in a traditional Indian kitchen" loading="lazy">
+
+                <div class="service-icon cyan">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+
+                <h3>RO & Water Purifier</h3>
+
+                <p>
+                    RO service, filter replacement, membrane,
+                    installation and maintenance.
+                </p>
+
+                <div class="service-price"><small>STARTING AT</small><strong>₹249</strong></div>
+
+                <button type="button" class="service-book">Book this service <i class="fa-solid fa-arrow-right"></i></button>
+
+            </div>
+
+
+            <div class="service-card"
+                 onclick="selectService('Geyser Repair')">
+
+                <img class="service-photo photo-geyser" src="https://images.pexels.com/photos/6436774/pexels-photo-6436774.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Storage water heater in a home bathroom" loading="lazy">
+
+                <div class="service-icon orange">
+                    <i class="fa-solid fa-fire-flame-simple"></i>
+                </div>
+
+                <h3>Geyser Repair</h3>
+
+                <p>
+                    Heating element, thermostat, leakage and
+                    geyser maintenance services.
+                </p>
+
+                <div class="service-price"><small>STARTING AT</small><strong>₹249</strong></div>
+
+                <button type="button" class="service-book">Book this service <i class="fa-solid fa-arrow-right"></i></button>
+
+            </div>
+
+
+        </div>
+
+        <p class="pricing-note">
+            Starting prices are estimates. We confirm the final repair cost after diagnosis; parts are quoted separately before work begins.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats numbers">
+
+    <div class="container stats-grid">
+
+        <div>
+            <strong>5</strong>
+            <span>Appliance Categories</span>
+        </div>
+
+        <div>
+            <strong>24/7</strong>
+            <span>Booking Support</span>
+        </div>
+
+        <div>
+            <strong>Clear</strong>
+            <span>Upfront Estimates</span>
+        </div>
+
+        <div>
+            <strong>Fast</strong>
+            <span>Doorstep Response</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="process section light" id="process">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>HOW IT WORKS</span>
+
+            <h2>Repair Made <em>Simple.</em></h2>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">01</div>
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h3>Book Online or Call</h3>
+
+                <p>
+                    Choose your appliance and send us a service request.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">02</div>
+
+                <i class="fa-solid fa-user-gear"></i>
+
+                <h3>Technician Visit</h3>
+
+                <p>
+                    Our service professional contacts you to coordinate a visit.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">03</div>
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <h3>Get It Fixed</h3>
+
+                <p>
+                    We diagnose the issue, explain the estimate, then repair and test.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY US ================= -->
+
+<section class="section" id="why">
+
+    <div class="container why-grid">
+
+        <div>
+
+            <span class="section-label">WHY SRM MECHANIC?</span>
+
+            <h2>
+                We Don't Just Repair. We Care.
+            </h2>
+
+            <p>
+                A convenient appliance service experience built around clear estimates, easy booking and doorstep assistance.
+            </p>
+
+
+            <div class="benefits">
+
+                <div>
+                    <i class="fa-solid fa-user-shield"></i>
+
+                    <div>
+                        <h3>Skilled Technicians</h3>
+                        <p>Appliance service for the categories listed on this page.</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                    <div>
+                        <h3>Transparent Pricing</h3>
+                        <p>Repair estimates are confirmed before work begins.</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-clock"></i>
+
+                    <div>
+                        <h3>Quick Response</h3>
+                        <p>Send your request and coordinate a service visit.</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-headset"></i>
+
+                    <div>
+                        <h3>Service Support</h3>
+                        <p>Call or WhatsApp for help with your request.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="why-box">
+
+            <i class="fa-solid fa-house-circle-check"></i>
+
+            <h3>Your Home. Our Expertise.</h3>
+
+            <p>
+                AC • Refrigerator • Washing Machine • RO • Geyser
+            </p>
+
+            <button type="button" class="btn primary" onclick="openBooking('General Appliance Service')">Request Service</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKING ================= -->
+
+<div class="modal" id="bookingModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-booking></div>
+    <section class="modal-box" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+        <button class="close" type="button" onclick="closeBooking()" aria-label="Close booking form">&times;</button>
+        <div class="modal-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <h2 id="bookingTitle">Book Your Service</h2>
+        <p id="selectedService">Appliance Service</p>
+        <form class="booking-form" id="bookingForm">
+            <label for="customerName">Your Name</label>
+            <input type="text" id="customerName" placeholder="Your name" autocomplete="name" required>
+            <label for="customerPhone">Mobile Number</label>
+            <input type="tel" id="customerPhone" placeholder="10-digit mobile number" minlength="10" maxlength="10" pattern="[0-9]{10}" inputmode="numeric" autocomplete="tel" required>
+            <label for="appliance">Appliance</label>
+            <select id="appliance" required>
+                <option value="">Select Service</option>
+                <option>AC Repair &amp; Service</option>
+                <option>Refrigerator Repair</option>
+                <option>Washing Machine Repair</option>
+                <option>RO Service</option>
+                <option>Geyser Repair</option>
+            </select>
+            <label for="location">Your Location</label>
+            <input type="text" id="location" placeholder="Area / location" autocomplete="address-level2" required>
+            <label for="problem">Problem Description <span>(optional)</span></label>
+            <textarea id="problem" rows="3" placeholder="Describe the problem"></textarea>
+            <button type="submit" class="btn primary full"><i class="fa-brands fa-whatsapp"></i> Send Request</button>
+        </form>
+    </section>
+</div>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="section" id="faq">
+
+    <div class="container faq-container">
+
+        <div class="section-heading">
+
+            <span>FAQ</span>
+
+            <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button onclick="toggleFAQ(this)">
+                How can I book an appliance repair?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <div class="faq-answer">
+                Select your service, fill in your details and submit
+                the service request. You can also call 9588398563.
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button onclick="toggleFAQ(this)">
+                Which appliances do you repair?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <div class="faq-answer">
+                We provide services for AC, refrigerator, washing
+                machine, RO and geyser.
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <button onclick="toggleFAQ(this)">
+                How do I contact SRM?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <div class="faq-answer">
+                Call or WhatsApp us on 9588398563.
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button onclick="toggleFAQ(this)" aria-expanded="false">
+                Do you provide doorstep service?
+                <i class="fa-solid fa-plus"></i>
+            </button>
+
+            <div class="faq-answer">
+                Yes. Contact SRM Mechanic to coordinate doorstep appliance assistance.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="final-cta">
+    <div class="container final-cta-inner">
+        <div>
+            <span>NEED A REPAIR?</span>
+            <h2>Let’s get your appliance working again.</h2>
+        </div>
+        <div class="cta-buttons">
+            <button type="button" class="btn white-btn" onclick="openBooking('General Appliance Service')">Book Service</button>
+            <a href="tel:9588398563" class="btn dark-btn"><i class="fa-solid fa-phone"></i> 9588398563</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <div class="footer-logo">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                SRM MECHANIC
+            </div>
+
+            <p>
+                Professional home appliance repair and maintenance
+                services at your doorstep.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Services</h3>
+
+            <a href="#services">AC Repair</a>
+            <a href="#services">Refrigerator</a>
+            <a href="#services">Washing Machine</a>
+            <a href="#services">RO Service</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#home" onclick="openBooking('General Appliance Service'); return false;">Book Service</a>
+            <a href="#faq">FAQ</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <a href="tel:9588398563">
+                <i class="fa-solid fa-phone"></i>
+                9588398563
+            </a>
+
+            <a href="https://wa.me/919588398563"
+               target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 SRM MECHANIC
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<a class="float whatsapp"
+   href="https://wa.me/919588398563"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Message SRM Mechanic on WhatsApp">
+
+    <i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+<a class="float phone"
+    href="tel:9588398563"
+    aria-label="Call SRM Mechanic">
+
+    <i class="fa-solid fa-phone"></i>
+
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
